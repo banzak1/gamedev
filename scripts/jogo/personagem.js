@@ -1,5 +1,5 @@
-class Personagem{
-  constructor(imagem){
+class Personagem {
+  constructor(imagem) {
     this.imagem = imagem;
     this.matriz = [
       [0, 0],
@@ -16,23 +16,33 @@ class Personagem{
       [660, 540],
       [0, 810],
       [220, 810],
-      [400, 810],
+      [440, 810],
       [660, 810],
-    ]
+    ];
     this.frameAtual = 0;
   }
-  
-  exibe(){
-    image(this.imagem, 0, height-135, 110, 135, this.matriz[this.frameAtual][0], this.matriz[this.frameAtual][1], 220, 270);
-    
+
+  exibe() {
+    image(
+      this.imagem,
+      0,
+      height - 135,
+      110,
+      135,
+      this.matriz[this.frameAtual][0],
+      this.matriz[this.frameAtual][1],
+      220,
+      270
+    );
+
     this.anima();
   }
-  
-  anima(){
+
+  anima() {
     this.frameAtual++;
-    
-    if(this.frameAtual >= this.matriz.length - 1){
-       this.frameAtual = 0;
-       }
+
+    if (this.frameAtual >= this.matriz.length - 1) {
+      this.frameAtual = 0;
+    }
   }
 }
