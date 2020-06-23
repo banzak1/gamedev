@@ -3,16 +3,15 @@ class Inimigo extends Animacao {
     matriz,
     imagem,
     x,
-    y,
     largura,
     altura,
     larguraSprite,
     alturaSprite
   ) {
-    super(matriz, imagem, x, y, largura, altura, larguraSprite, alturaSprite);
+    super(matriz, imagem, x, largura, altura, larguraSprite, alturaSprite);
   }
 
-  
+
 
 
 
