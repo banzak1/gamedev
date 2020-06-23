@@ -9,11 +9,15 @@ class Inimigo extends Animacao {
     alturaSprite
   ) {
     super(matriz, imagem, x, largura, altura, larguraSprite, alturaSprite);
+    
+    this.velocidade = 8;
   }
 
+  move(){
+    this.x = this.x - this.velocidade;
 
-
-
-
-
+    if(this.x < -this.largura){
+      this.x = width;
+    }
+  }
 }

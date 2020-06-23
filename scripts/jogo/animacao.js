@@ -32,6 +32,8 @@ class Animacao {
       this.larguraSprite,
       this.alturaSprite
     );
+
+    this.anima();
   }
 
   anima() {
