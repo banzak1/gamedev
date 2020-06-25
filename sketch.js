@@ -84,10 +84,11 @@ function draw() {
   cenario.exibe();
   cenario.move();
   
+  personagem.exibe();
+  personagem.aplicaGravidade();
+
   inimigo.exibe();
   inimigo.move();
-
-  personagem.exibe();
   
 }
 
