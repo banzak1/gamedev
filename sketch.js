@@ -90,6 +90,11 @@ function keyPressed(){
   }
 }
 
+function mousePressed(){
+    personagem.pula();
+    somDoPulo.play();
+}
+
 function draw() {
   cenario.exibe();
   cenario.move();
